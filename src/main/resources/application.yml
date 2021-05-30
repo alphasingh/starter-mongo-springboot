@@ -1,0 +1,11 @@
+server:
+  port: 8092
+  servlet.context-path: /starter-mongo-api/v1
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/starter_db
+
+logging:
+  file: /var/log/starter-mongo/api.log
