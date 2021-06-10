@@ -19,6 +19,7 @@ public class ObjectAdapter {
         Assert.notNull(dto, ErrorMessage.VALIDATION_INVALID_INPUT_EMPTY);
         return ObjectEntity.builder()
                 .value(dto.getValue())
+                .activity(dto.getActivity())
                 .build();
     }
 
@@ -27,6 +28,8 @@ public class ObjectAdapter {
         return ObjectDto.builder()
                 .id(entity.getId())
                 .value(entity.getValue())
+                .activity(entity.getActivity())
+                .createdAt(entity.getCreatedAt())
                 .build();
     }
 
