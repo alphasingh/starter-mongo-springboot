@@ -25,6 +25,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @Slf4j
 @RequiredArgsConstructor(onConstructor = @__({@Autowired, @Lazy}))
 @RequestMapping(value = "/objects")
+@CrossOrigin
 public class ObjectController {
 
     private final ObjectService objectService;
